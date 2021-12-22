@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+    
+        <title>BVRN Token</title>
+        <meta charset="UTF-8">
+        <meta name="version" content="1.0.0">
+        <meta name="author" content="BVRN (BRN)">
+        <meta name="description" content="BVRN (BRN) is a highly deflationary ERC-20 Token">
+
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+        <meta http-equiv="Content-Security-Policy" content="style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com;">
+
+        <link rel="icon" type="image/x-icon" href="assets/icons/ic-logo.png">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="css/ib.css">
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/app.css">
+        
+    </head>
+
+    <body>
+
+        <div id="header" class="ib-header">
+            <div id="header-logo">
+                <img src="assets/icons/ic-logo.png"></img>
+                <p class="ib-text-header">BVRN (BRN)</p>
+            </div>
+            <div id="header-nav">
+                <p class="i18n ib-button" data-i18n="XQPHM" data-nav="section-project"></p>
+                <p class="i18n ib-button" data-i18n="PWSBX" data-nav="section-tokenomics"></p>
+                <p class="i18n ib-button" data-i18n="EXXZN" data-nav="section-roadmap"></p>
+                <p class="i18n ib-button" data-i18n="HAWCD" data-nav="section-community"></p>
+                <a href="https://raw.githubusercontent.com/ItBvrns/bvrns-website/main/app/data/BVRN%20Whitepaper%20v1.pdf" target="_blank"><p class="i18n ib-button" data-i18n="KTOKF"></p></a>
+                <div id="button-language-selector" class="ib-button" onclick="APP.UI.openLanguageSelector()">
+                    <img src="assets/icons/ic-global.png"></img>
+                    <p class="i18n" data-i18n="UZXJX"></p>
+                </div>
+            </div>
+            <div id="header-menu">
+                <img id="button-menu-open" src="assets/icons/ic-menu.png" onclick="APP.UI.openMenu()"></img>
+                <img id="button-menu-close" src="assets/icons/ic-close.png" onclick="APP.UI.closeMenu()"></img>
+            </div>
+        </div>
+
+        <div id="section-home" class="ib-section">
+            <p id="token-brief" class="i18n ib-text-header" data-i18n="VFLQH"></p>
+            <p id="token-description" class="i18n ib-text-subtitle" data-i18n="IUAKY"></p>
+            <div id="home-buttons">
+                <p id="button-how-to-buy" class="i18n ib-button" data-i18n="MKTQN" onclick="APP.UI.openBuy()"></p>
+                <div id="button-contract-address">
+                    <p id="contract-address">0xf5E512c0823100109A36899FD5b92DDd8CdA5C82</p>
+                    <div id="button-copy-contract-address" onclick="APP.UI.copyContractAddress()">
+                        <img src="assets/icons/ic-copy.png"></img>
+                        <p class="i18n" data-i18n="NENUP"></p>
+                    </div>
+                </div>
+                <p id="tooltip-copied" class="i18n" data-i18n="ERTYU"></p>
+            </div>
+        </div>
+
+        <div id="section-project" class="ib-section">
+            <p class="i18n ib-section-header" data-i18n="XQPHM"></p>
+            <p class="i18n ib-section-subtitle" data-i18n="NDNVD"></p>
+            <p class="i18n ib-section-subtitle" data-i18n="OTIHI"></p>
+            <p class="i18n ib-section-subtitle" data-i18n="QBTCF"></p>
+        </div>
+        
+        <div id="section-tokenomics" class="ib-section">
+            <p class="i18n ib-section-header" data-i18n="PWSBX"></p>
+            <p class="i18n ib-section-subtitle" data-i18n="VIJNM"></p>
+            <div id="tokenomics">
+                <div class="chips-tokenomics-block">
+                    <div class="chips-tokenomics">
+                        <div class="chips-tokenomics-header">
+                            <img src="assets/icons/ic-total-supply.png"></img>
+                            <p class="i18n" data-i18n="DPLHI"></p>
+                        </div>
+                        <p class="i18n chips-tokenomics-description" data-i18n="OYZDY"></p>
+                    </div>
+                    <div class="chips-tokenomics">
+                        <div class="chips-tokenomics-header">
+                            <img src="assets/icons/ic-harmony.png"></img>
+                            <p class="i18n" data-i18n="IHWKE"></p>
+                        </div>
+                        <p class="i18n chips-tokenomics-description" data-i18n="CUMKJ"></p>
+                    </div>
+                    <div class="chips-tokenomics">
+                        <div class="chips-tokenomics-header">
+                            <img src="assets/icons/ic-burn.png"></img>
+                            <p class="i18n" data-i18n="LWKXI"></p>
+                        </div>
+                        <p class="i18n chips-tokenomics-description" data-i18n="XIKOH"></p>
+                    </div>
+                </div>
+                <div class="chips-tokenomics-block">
+                    <div class="chips-tokenomics">
+                        <div class="chips-tokenomics-header">
+                            <img src="assets/icons/ic-circulating-supply.png"></img>
+                            <p class="i18n" data-i18n="IAKCU"></p>
+                        </div>
+                        <p class="i18n chips-tokenomics-description" data-i18n="UEAET"></p>
+                    </div>
+                    <div class="chips-tokenomics">
+                        <div class="chips-tokenomics-header">
+                            <img src="assets/icons/ic-reservoir.png"></img>
+                            <p class="i18n" data-i18n="ESEZG"></p>
+                        </div>
+                        <p class="i18n chips-tokenomics-description" data-i18n="BTSGJ"></p>
+                    </div>
+                    <div class="chips-tokenomics">
+                        <div class="chips-tokenomics-header">
+                            <img src="assets/icons/ic-dev-marketing.png"></img>
+                            <p class="i18n" data-i18n="TPPKF"></p>
+                        </div>
+                        <p class="i18n chips-tokenomics-description" data-i18n="VGHOJ"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="section-roadmap" class="ib-section">
+            <p class="i18n ib-section-header" data-i18n="EXXZN"></p>
+            <p class="i18n ib-section-subtitle" data-i18n="CJYEW"></p>
+            <div id="roadmap">
+                <div id="roadmap-1st-phase" class="card-roadmap card-roadmap-done">
+                    <p class="i18n card-roadmap-header" data-i18n="FUWGT"></p>
+                    <ul class="card-roadmap-list">
+                        <li class="i18n" data-i18n="KJTKD"></li>
+                        <li class="i18n" data-i18n="WYZEM"></li>
+                        <li class="i18n" data-i18n="JZCFV"></li>
+                    </ul>
+                    <img class="roadmap-check roadmap-check-done" src="assets/icons/ic-check.png"></img>
+                </div>
+                <div id="roadmap-2nd-phase" class="card-roadmap card-roadmap-pending">
+                    <p class="i18n card-roadmap-header" data-i18n="OCTHP"></p>
+                    <ul class="card-roadmap-list">
+                        <li class="i18n" data-i18n="UGQMJ"></li>
+                        <li class="i18n" data-i18n="EGLCM"></li>
+                        <li class="i18n" data-i18n="RZDUJ"></li>
+                    </ul>
+                    <img class="roadmap-check roadmap-check-pending" src="assets/icons/ic-check.png"></img>
+                </div>
+                <div id="roadmap-3rd-phase" class="card-roadmap card-roadmap-pending">
+                    <p class="i18n card-roadmap-header" data-i18n="AMVPM"></p>
+                    <ul class="card-roadmap-list">
+                        <li class="i18n" data-i18n="XXREK"></li>
+                    </ul>
+                    <img class="roadmap-check roadmap-check-pending" src="assets/icons/ic-check.png"></img>
+                </div>
+            </div>
+        </div>
+
+        <div id="section-community" class="ib-section">
+            <p class="i18n ib-section-header" data-i18n="HAWCD"></p>
+            <p class="i18n ib-section-subtitle" data-i18n="ITKBW"></p>
+            <div id="communities">
+                <a target="_blank" href="https://twitter.com/ItBvrns"><div id="button-community-twitter" class="button-community">
+                    <img src="assets/icons/ic-twitter.png"></img>
+                    <p>Twitter</p>
+                </div></a>
+                <a target="_blank" href="https://www.instagram.com/itbvrns/"><div id="button-community-instagram" class="button-community">
+                    <img src="assets/icons/ic-instagram.png"></img>
+                    <p>Instagram</p>
+                </div></a>
+                <a target="_blank" href="https://www.reddit.com/r/bvrns/"><div id="button-community-reddit" class="button-community">
+                    <img src="assets/icons/ic-reddit.png"></img>
+                    <p>Reddit</p>
+                </div></a>
+                <a target="_blank" href="https://discord.gg/n4XHTccxdZ"><div id="button-community-discord" class="button-community">
+                    <img src="assets/icons/ic-discord.png"></img>
+                    <p>Discord</p>
+                </div></a>
+            </div>
+        </div>
+
+        <div id="footer" class="ib-footer">
+            <p class="i18n ib-footer-text">BVRN Token (BRN)</p>
+            <p class="i18n ib-footer-text" data-i18n="GXKTQ" onclick="APP.UI.openDisclaimer()"></p>
+        </div>
+
+        <div id="modal-language-selector" class="ib-modal">
+            <div class="ib-modal-header">
+                <p class="i18n ib-text-header" data-i18n="LYHVZ"></p>
+                <div class="ib-modal-button-close" onclick="APP.UI.closeLanguageSelector()">X</div>
+            </div>
+            <p class="modal-language-option" onclick="APP.UI.changeLanguage('en')">English</p>
+            <p class="modal-language-option" onclick="APP.UI.changeLanguage('es')">Español</p>
+        </div>
+
+        <div id="modal-disclaimer" class="ib-modal">
+            <div class="ib-modal-header">
+                <p class="i18n ib-text-header" data-i18n="GXKTQ"></p>
+                <div class="ib-modal-button-close" onclick="APP.UI.closeDisclaimer()">X</div>
+            </div>
+            <p id="disclaimer-text"></p>
+        </div>
+
+        <div id="modal-buy" class="ib-modal">
+            <div class="ib-modal-header">
+                <p class="i18n ib-text-header" data-i18n="MKTQN"></p>
+                <div class="ib-modal-button-close" onclick="APP.UI.closeBuy()">X</div>
+            </div>
+            <div id="markets">
+                <div class="market-option">
+                    <div id="market-sushiswap"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="mask-level-2" class="ib-dark-mask"></div>
+
+    </body>
+
+    <script src="lib/UIDG.js"></script>
+
+    <script src="app/app.js"></script>    
+    <script src="app/i18n/i18n.js"></script>
+    <script src="app/core/ui/ui.js"></script>
+    <script src="app/core/init/init.js"></script>
+
+</html>

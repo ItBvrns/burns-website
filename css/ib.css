@@ -1,0 +1,113 @@
+.ib-header{
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	box-sizing: border-box;	
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	padding: 16px 48px;	
+}
+
+.ib-text-header{
+	font-weight: 700;
+	font-size: 28px;
+}
+
+.ib-button{
+	padding: 8px;
+	margin: 8px;
+	border-radius: 5px;
+	max-width: 150px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.ib-button:hover{
+	background: #f50000;
+}
+
+.ib-section{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	box-sizing: border-box;
+	width: 100%;
+	min-height: 400px;
+	padding: 48px;
+}
+
+.ib-section-header{
+	font-size: 48px;
+	font-weight: 700;
+	margin-bottom: 32px;
+}
+
+.ib-section-subtitle{
+	font-size: 20px;
+	margin-bottom: 32px;
+	max-width: 900px;
+	text-align: center;
+}
+
+.ib-modal{
+	position: fixed;
+	display: none;	
+	flex-direction: column;	
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.ib-modal-active{
+	display: flex;
+}
+
+.ib-modal-header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 8px 0px;
+	padding: 8px 16px;
+}
+
+.ib-modal-header .ib-text-header{
+	width: calc(100% - 48px);
+}
+
+.ib-modal-button-close{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
+	font-size: 20px;
+	font-weight: 700;
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.ib-modal-button-close:hover{
+	background: #424242;
+}
+
+.ib-dark-mask{
+	position: fixed;
+	visibility: hidden;
+	background: #000;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+	pointer-events: none;
+}
+
+.ib-dark-mask-active{
+	visibility: visible;
+	opacity: 0.80;
+}
